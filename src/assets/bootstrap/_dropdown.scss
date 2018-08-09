@@ -164,3 +164,15 @@
   padding: $dropdown-item-padding-y $dropdown-item-padding-x;
   color: $dropdown-link-color;
 }
+
+
+////////////////////////////////////////////////////////////////////////////////////////
+
+
+.dropdown-toggle::after {
+  position: relative;
+  top: 3px;
+  color: #333333;
+}
+
+

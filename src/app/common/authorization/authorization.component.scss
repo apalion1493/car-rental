@@ -1,0 +1,45 @@
+.authorization {
+  display: flex;
+  justify-content: space-around;
+}
+
+.authorization__registration,
+.authorization__entrance {
+  margin-top: 16px;
+  
+  span {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+}
+
+.authorization__registration a {
+  display: flex;
+  align-items: center;
+  color: #DE9A2E;
+
+}
+
+.authorization__registration i {
+  background: url('authorization__key.svg') no-repeat center;
+  background-size: 100% auto;
+  width: 22px;
+  height: 21px;
+  display: block;
+  margin-right: 8px;
+}
+
+.authorization__entrance a {
+  display: flex;
+  align-items: center;
+  color: #333333;
+}
+
+.authorization__entrance i {
+  background: url('authorization__man-user.svg') no-repeat center;
+  background-size: 100% auto;
+  width: 17px;
+  height: 23px;
+  display: block;
+  margin-right: 9px;
+}

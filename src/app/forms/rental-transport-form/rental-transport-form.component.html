@@ -1,3 +1,171 @@
-<p>
-  rental-transport-form works!
-</p>
+<div class="rental-transport-form container ">
+  <div class="row">
+    <div class="col-12 d-flex flex-column align-items-center">
+      <div class="rental-transport-form__container row">
+        <div class="col-12">
+          <div class="row">
+            <form action="" class="rental-transport-form__country col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect1">Country</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                  <option>the USA</option>
+                  <option>Afghanistan</option>
+                  <option>Albania</option>
+                  <option>Algeria</option>
+                  <option>Andorra</option>
+                  <option>Angola</option>
+                  <option>Antigua and</option>
+                  <option>Argentina</option>
+                  <option>Armenia</option>
+                </select>
+              </div>
+            </form>
+            <form action="" class="rental-transport-form__city col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect2">City</label>
+                <select class="form-control rental-transport-form__city-select" id="exampleFormControlSelect2">
+                  <option>Select City</option>
+                  <option>New York City</option>
+                  <option>Newburgh</option>
+                  <option>Niagara Falls</option>
+                  <option>North Tonawanda</option>
+                  <option>Norwich</option>
+                </select>
+              </div>
+            </form>
+            <form action="" class="rental-transport-form__period col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect3">Period</label>
+                <select class="form-control rental-transport-form__city-select" id="exampleFormControlSelect3">
+                  <option>Select period</option>
+                  <option>New York City</option>
+                  <option>Newburgh</option>
+                  <option>Niagara Falls</option>
+                  <option>North Tonawanda</option>
+                  <option>Norwich</option>
+                </select>
+              </div>
+            </form>
+            <form action="" class="rental-transport-form__type-of-transport col">
+              <div class="form-group">
+                <label for="exampleFormControlSelect4">Type of Transport</label>
+                <select class="form-control" id="exampleFormControlSelect4">
+                  <option>Cars</option>
+                  <option>Afghanistan</option>
+                  <option>Albania</option>
+                </select>
+              </div>
+            </form>
+            <form action="" class="rental-transport-form__transmission col-2">
+              <div class="form-group">
+                <label for="exampleFormControlSelect5">Transmission</label>
+                <select class="form-control" id="exampleFormControlSelect5">
+                  <option>Any</option>
+                  <option>Afghanistan</option>
+                  <option>Albania</option>
+                </select>
+              </div>
+            </form>
+          </div>
+        </div> <!--если блок ".rental-transport-form__container-detailed" не активен то тут должно быть .col-10-->
+        <!--<div class="col-2 pr-0">-->
+          <!--<button type="button" class="rental-transport-form__btn-search btn btn-primary">Search</button>-->
+        <!--</div>--> <!--тут кнопка появляется только если скрыт блок ".rental-transport-form__container-detailed"-->
+        <div class="rental-transport-form__container-detailed col-12">
+          <div class="row">
+            <div class="col-4 rental-transport-form__container-detailed-block">
+              <div class="rental-transport-form__slider-price">
+                <label for="customRange1">Price:<span class="rental-transport-form__slider-bold-text">$11 - $85</span></label>
+                <div class="d-flex justify-content-center">
+                  <span class="mr-2 rental-transport-form__slider-text">$10</span>
+                  <input type="range" class="custom-range" id="customRange1">
+                  <span class="ml-2 rental-transport-form__slider-text">$100</span>
+                </div>
+              </div>
+
+              <div class="rental-transport-form__slider-consumption">
+                <label for="customRange2">Consumption:<span class="rental-transport-form__slider-bold-text">5l/km - 25 l/km</span></label>
+                <div class="d-flex justify-content-center">
+                  <span class="mr-2 rental-transport-form__slider-text">1</span>
+                  <input type="range" class="custom-range" id="customRange2">
+                  <span class="ml-2 rental-transport-form__slider-text">30</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 rental-transport-form__container-detailed-block">
+              <div class="d-flex flex-column">
+                <span>Fuel:</span>
+                <label class="rental-transport-form__checkbox">
+                  <input class="checkbox" type="checkbox" name="checkbox-test">
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Gasoline</span>
+                </label>
+                <label class="rental-transport-form__checkbox">
+                  <input class="checkbox" type="checkbox" name="checkbox-test">
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Diesel</span>
+                </label>
+                <label class="rental-transport-form__checkbox">
+                  <input class="checkbox" type="checkbox" name="checkbox-test">
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Gas</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-2 rental-transport-form__container-detailed-block">
+              <div class="d-flex flex-column">
+                <span>Drive:</span>
+                <label class="rental-transport-form__checkbox">
+                  <input class="checkbox" type="checkbox" name="checkbox-test">
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Front-wheel</span>
+                </label>
+                <label class="rental-transport-form__checkbox">
+                  <input class="checkbox" type="checkbox" name="checkbox-test">
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Four-wheel</span>
+                </label>
+                <label class="rental-transport-form__checkbox">
+                  <input class="checkbox" type="checkbox" name="checkbox-test">
+                  <span class="checkbox-custom"></span>
+                  <span class="label">Rear</span>
+                </label>
+              </div>
+            </div>
+            <div class="col-4 rental-transport-form__container-detailed-block">
+              <div class="rental-transport-form__slider-year">
+                <label for="customRange3">Year:<span class="rental-transport-form__slider-bold-text">2007 - 2015</span></label>
+                <div class="d-flex justify-content-center">
+                  <span class="mr-2 rental-transport-form__slider-text">1999</span>
+                  <input type="range" class="custom-range" id="customRange3">
+                  <span class="ml-2 rental-transport-form__slider-text">2018</span>
+                </div>
+              </div>
+
+              <div class="rental-transport-form__slider-engine">
+                <label for="customRange4">Engine:<span class="rental-transport-form__slider-bold-text">3L - 4L</span></label>
+                <div class="d-flex justify-content-center">
+                  <span class="mr-2 rental-transport-form__slider-text">0.5L</span>
+                  <input type="range" class="custom-range" id="customRange4">
+                  <span class="ml-2 rental-transport-form__slider-text">6L</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 ml-auto">
+              <button type="button" class="rental-transport-form__btn-search btn btn-primary">Search</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div type="button" class="rental-transport-form__btn-more btn-group-toggle" data-toggle="buttons">
+        <label class="rental-transport-form__btn-more-label btn btn-primary">
+          <input type="checkbox" autocomplete="off"> More
+        </label>
+      </div>
+
+    </div>
+  </div>
+</div>

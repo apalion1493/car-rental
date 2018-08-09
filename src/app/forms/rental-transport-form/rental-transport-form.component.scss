@@ -1,0 +1,153 @@
+.rental-transport-form__container {
+  width: 100%;
+  height: auto;
+  background: #ffffff;
+  padding: 26px 12px 0 5px;
+  margin-top: 24px;
+  display: flex;
+  border-bottom: 3px solid #FDD32E;
+  border-radius: 5px;
+  margin-left: 0;
+  z-index: 10;
+  box-shadow: 0 7px 10px -5px rgba(0, 0, 0, .5);
+
+
+  label {
+    margin-bottom: 6px;
+  }
+}
+
+
+.rental-transport-form__city {
+  position: relative;
+}
+
+.rental-transport-form__city:before {
+  content: '';
+  background: #ffffff url("rental-transport-form__hotel-icon.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 37px;
+  right: 20px;
+  z-index: 1;
+}
+
+.rental-transport-form__period {
+  position: relative;
+}
+
+.rental-transport-form__period:before {
+  content: '';
+  background: #ffffff url("rental-transport-form__calendar.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 20px;
+  height: 21px;
+  position: absolute;
+  top: 39px;
+  right: 23px;
+  z-index: 1;
+}
+
+
+.rental-transport-form__btn-search {
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 27px;
+  box-shadow: inset 0 -7px 20px -10px rgba(0, 0, 0, .5);
+}
+
+.rental-transport-form__btn-more {
+  z-index: 1;
+  position: relative;
+  width: 141px;
+  height: 46px;
+  margin-bottom: 50px;
+  top: -12px;
+  padding-top: 12px;
+  padding-bottom: 0;
+
+    label {
+      width: 100%;
+    }
+}
+
+.rental-transport-form__container-detailed {
+  padding-top: 22px;
+  padding-bottom: 20px;
+}
+
+.rental-transport-form__slider-price,
+.rental-transport-form__slider-consumption,
+.rental-transport-form__slider-year,
+.rental-transport-form__slider-engine {
+  margin-bottom: 30px;
+}
+
+input[type=range] {
+  width: 280px;
+}
+
+.rental-transport-form__slider-bold-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 10px;
+}
+
+.rental-transport-form__container-detailed-block {
+  border-right: 1px solid #D8D8D8;
+
+  .checkbox {
+    display: none;
+  }
+  /* Задаем внешний вид для нашего кастомного чекбокса. Все обязательные свойства прокомментированы, остальные же свойства меняйте по вашему усмотрению */
+  .checkbox-custom {
+    position: relative;      /* Обязательно задаем, чтобы мы могли абсолютным образом позиционировать псевдоэлемент внютри нашего кастомного чекбокса */
+    width: 20px;             /* Обязательно задаем ширину */
+    height: 20px;            /* Обязательно задаем высоту */
+    border: 2px solid #D8D8D8;
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+  /* Кастомный чекбокс и лейбл центрируем по вертикали. Если вам это не требуется, то вы можете убрать свойство vertical-align: middle из данного правила, но свойство display: inline-block обязательно должно быть */
+  .checkbox-custom,
+  .label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .checkbox:checked + .checkbox-custom {
+    border: 2px solid #FDD32E;
+  }
+  /* Если реальный чекбокс у нас отмечен, то тогда добавляем данный признак и к нашему кастомному чекбоксу  */
+  .checkbox:checked + .checkbox-custom::before {
+    content: "";             /* Добавляем наш псевдоэлемент */
+    display: block;			 /* Делаем его блочным элементом */
+    position: absolute;      /* Позиционируем его абсолютным образом */
+    /* Задаем расстояние от верхней, правой, нижней и левой границы */
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background: #FDD32E;     /* Добавляем фон. Если требуется, можете поставить сюда картинку в виде "галочки", которая будет символизировать, что чекбокс отмечен */
+    border-radius: 2px;
+  }
+}
+
+.rental-transport-form__checkbox {
+  margin-bottom: 15px !important;
+}
+
+.rental-transport-form__container-detailed-block:nth-child(4) {
+  border-right: none;
+}
+
+.rental-transport-form__slider-text {
+  font-size: 14px;
+}
