@@ -1,0 +1,50 @@
+.destination-item {
+  background: url("destination-item__orlando.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 267px;
+  height: 184px;
+  position: relative;
+  text-align: center;
+  border-radius: 2px;
+}
+
+.destination-item__title {
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 73px;
+}
+
+.destination-item__country {
+  color: #ffffff;
+}
+
+.destination-item__bottom-text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.destination-item__cars,
+.destination-item__views {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  span {
+    color: #ffffff;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+}
+
+.destination-item__cars i {
+  background: url("destination-item__volkswagen-car-side-view.svg") no-repeat center;
+  background-size: 100% auto;
+  width: 34px;
+  height: 14px;
+  display: block;
+}
